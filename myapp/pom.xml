@@ -19,14 +19,14 @@
 	</parent>
 	<distributionManagement>
 	    <repository>
-			<id>MavenDemo</id>
-  			<url>https://pkgs.dev.azure.com/DevOps--Academy/CI-CD/_packaging/Maven/maven/v1</url>
-  			<releases>
-  			  <enabled>true</enabled>
-  			</releases>
-  			<snapshots>
-  			  <enabled>true</enabled>
-  			</snapshots>
+		  <id>Maven</id>
+		  <url>https://pkgs.dev.azure.com/DevOps--Academy/CI-CD/_packaging/Maven/maven/v1</url>
+		  <releases>
+		    <enabled>true</enabled>
+		  </releases>
+		  <snapshots>
+		    <enabled>true</enabled>
+		  </snapshots>
 		</repository>
 	</distributionManagement>
 	<properties>

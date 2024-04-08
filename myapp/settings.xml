@@ -1,5 +1,12 @@
-<server>
-  <id>CI-CD</id>
-  <username>DevOps--Academy</username>
-  <password>6wodprufiund7fpnp62czk56i5e6g64apid3yfhnkg3bzzjknasa</password>
-</server>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              https://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <servers>
+    <server>
+      <id>Maven</id>
+      <username>DevOps--Academy</username>
+      <password>lwr6p75zli6ucjtagnk74b44dpmdp5hinhfph45mwjy5itj4he6q</password>
+    </server>
+  </servers>
+</settings>
