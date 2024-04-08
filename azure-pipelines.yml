@@ -3,6 +3,14 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javaresources:
 
+trigger:
+  branches:
+    include: 
+      - develop
+      - release/*
+    exclude:
+      - release/old/*
+
 queue:
   name: Azure Pipelines
   demands: maven
