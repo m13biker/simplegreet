@@ -36,17 +36,17 @@ steps:
     mavenPomFile: myapp/pom.xml
     options: '-Dmaven.test.skip=true'
 
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'myapp/pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    mavenAuthenticateFeed: true
-    publishJUnitResults: false
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'deploy'
+#- task: Maven@3
+#  inputs:
+#    mavenPomFile: 'myapp/pom.xml'
+#    mavenOptions: '-Xmx3072m'
+#    javaHomeOption: 'JDKVersion'
+#    jdkVersionOption: '1.8'
+#    jdkArchitectureOption: 'x64'
+#    mavenAuthenticateFeed: true
+#    publishJUnitResults: false
+#    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+#    goals: 'deploy'
 
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
