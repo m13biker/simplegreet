@@ -11,9 +11,15 @@ trigger:
     exclude:
       - release/old/*
 
-queue:
-  name: Azure Pipelines
-  demands: maven
+#queue:
+#  name: Azure Pipelines
+#  demands: maven
+
+pool: 
+  name: "Azure Pipelines"
+  demands: 
+  - maven
+  - Agent.Version -equals 3.236.1
 
 steps:
 - task: Maven@3
